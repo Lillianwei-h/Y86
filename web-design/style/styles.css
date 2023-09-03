@@ -1,0 +1,154 @@
+body{
+    /* 整个页面 */
+    margin: 0 0 0 30px;
+    width: 1500px;
+    background-color: black;
+    color: white;
+    background-repeat: no-repeat;
+    height: 1200px;
+
+}
+header{
+    /* 大标题栏 */
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(68, 78, 125, 0.512);
+    color: rgb(255, 255, 255);
+    height: 100px;
+    padding: 20px 0 0 30px;
+    border-radius: 15px;
+    margin: 20px 20px 20px 0;
+    font-weight: bold;
+}
+h2{
+    /* 副标题 */
+    color: rgba(255, 255, 255, 0.454);
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+p{
+    margin-top: 0;
+}
+ul.button{
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+li{
+    /* 通用单个列表 */
+    display: inline-block;
+    width: 100px;
+    margin: 0 10px 15px 0;
+}
+ul.reg li{
+    /* 寄存器的单个列表 */
+    margin-top: 5px;
+    height: 30px;
+    padding-top: 5px;
+}
+li.ccname{
+    /* cc名称的单个列表 */
+    margin-right: 0px;
+}
+li.namepc,li.namestat,li.namecc{
+    /* PC、CC、STAT标题的单个列表 */
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    padding: 10px 0 0 0px;
+    background-color: rgba(226, 217, 255, 0.466);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    margin: 10px 20px 0 150px;
+    text-align: center;
+}
+li.namestat{
+    /* 调整STAT标题 */
+    margin: 10px 20px 0 0;
+}
+li.namecc{
+    /* 调整CC标题 */
+    width: 500px;
+    margin: 10px 100px 0 82px;
+}
+ul.pcccstat{
+    /* PC、CC、STAT数据的整体列表 */
+    list-style-type: none;
+    height: 25px;
+}
+#stat{
+    /* STAT数据 */
+    text-align: center;
+}
+#pc{
+    /* PC数据 */
+    width: 70px;
+    text-align: center;
+}
+li.ccname{
+    /* CC各数据名 */
+    width: 40px;
+    margin-left: 20px;
+}
+li.cc{
+    /* CC各数据 */
+    width: 70px;
+    text-align: center;
+    background-color: rgba(183, 185, 255, 0.184);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+/* 调整PC、CC、STAT数据的间距 */
+li.blank0{
+    width: 200px;
+}
+li.blank1{
+    width: 155px;
+}
+li.blank2{
+    width: 180px;
+}
+div{
+    /* 寄存器和内存的标题 */
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 0 0 20px;
+    background-color: rgba(226, 217, 255, 0.466);
+    border-radius: 15px;
+    margin: 10px 20px 0 0;
+    text-align: center;
+}
+ul.reg{
+    /* 寄存器的整体列表 */
+    height: 155px;
+}
+li.regname{
+    /* 寄存器各数据名 */
+    width: 45px;
+    text-transform: uppercase;
+}
+li.register{
+    /* 寄存器各数据 */
+    width: 150px;
+    padding-left: 10px; 
+    background-color: rgba(183, 185, 255, 0.184);
+    border-radius: 5px;
+}
+ul.mem li{
+    /* 内存单个列表 */
+    height: 40px;
+    width: 250px;
+    padding: 15px 0 0 20px;
+    background-color: rgba(65, 65, 102, 0.621);
+    border-radius: 15px;
+}
+li.change{
+    /* js中设定的如果某一数据产生变化，则会出现的显示效果（背景变成紫色，文字加粗） */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(75, 39, 107);
+}

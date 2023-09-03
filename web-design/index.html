@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Y86-SEQ CPU</title>  <!--该网页名称-->
+    <link rel="stylesheet" href="style/styles.css"> <!--css文件路径-->
+</head>
+<body>
+    <header id="start">
+        Y86-SEQ CPU                 <!-- 标题 -->
+        <h2>Click to start</h2> <!--副标题 -->
+    </header>
+    <ul class="names">      <!-- PC、CC、STAT三个标题-->
+        <li class="namepc">PC</li>
+        <li class="namecc">CC</li>
+        <li class="namestat">STAT</li>
+    </ul>
+    <ul class="pcccstat">   <!--接收PC、CC、STAT数据的列表，并且设置PC、CC、STAT的初始值-->
+        <li class="blank0"></li>    <!--blank0、1、2在css文件里控制长度，用来调整数据显示的位置-->
+        <li id="pc">0</li>
+        <li class="blank1"></li>
+        <li class="ccname">ZF :</li>
+        <li class="cc" id="zf">TRUE</li>
+        <li class="ccname">SF :</li>
+        <li class="cc" id="sf">FALSE</li>
+        <li class="ccname">OF :</li>
+        <li class="cc" id="of">FALSE</li>
+        <li class="blank2"></li>
+        <li id="stat">SAOK</li>
+    </ul>
+    <div>Register</div> <!--寄存器标题-->
+    <ul class="reg">    <!--接收寄存器数据的列表，并且设置各寄存器的初始值-->
+        <li class="regname">rax :</li>
+        <li class="register" id="rax">0</li>
+        <li class="regname">rcx :</li>
+        <li class="register" id="rcx">0</li>
+        <li class="regname">rdx :</li>
+        <li class="register" id="rdx">0</li>
+        <li class="regname">rbx :</li>
+        <li class="register" id="rbx">0</li>
+        <li class="regname">rsp :</li>
+        <li class="register" id="rsp">0</li>
+        <li class="regname">rbp :</li>
+        <li class="register" id="rbp">0</li>
+        <br class="br1"/>   <!--换行-->
+        <li class="regname">rsi :</li>
+        <li class="register" id="rsi">0</li>
+        <li class="regname">rdi :</li>
+        <li class="register" id="rdi">0</li>
+        <li class="regname">r8 :</li>
+        <li class="register" id="r8">0</li>
+        <li class="regname">r9 :</li>
+        <li class="register" id="r9">0</li>
+        <li class="regname">r10 :</li>
+        <li class="register" id="r10">0</li>
+        <li class="regname">r11 :</li>
+        <li class="register" id="r11">0</li>
+        <br class="br1"/>   <!--换行-->
+        <li class="regname">r12 :</li>
+        <li class="register" id="r12">0</li>
+        <li class="regname">r13 :</li>
+        <li class="register" id="r13">0</li>
+        <li class="regname">r14 :</li>
+        <li class="register" id="r14">0</li>
+    </ul>
+    <div class="memname">   <!--内存标题-->
+        Memory
+    </div>
+    <ul class="mem">    <!--放置所有内存的列表-->
+
+    </ul>
+    <script src="jquery/dist/jquery.js"></script>   <!--jquery库路径-->
+    <script src="scripts/main.js"></script>         <!--js文件路径-->
+</body>
+</html>
